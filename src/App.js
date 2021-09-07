@@ -12,7 +12,7 @@ function App() {
     dispatch(fetchPosts());
   }, []);
   return (
-    <div className="App gap-8 w-full flex justify-center flex-wrap py-10">
+    <div className="App bg-blue-200 gap-10 w-full flex overflow-x-hidden justify-center flex-wrap py-10">
       {posts.map((post, index) => (
         <Card key={index} post={post} />
       ))}
